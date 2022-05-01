@@ -1,0 +1,65 @@
+.header {
+    width: 100%;
+    height: 85px;
+    background: rgba(12, 75, 181, 0.03);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 65px;
+}
+
+.h-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 65px 0px 65px;
+    /* background: violet; */
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.h-btn-container {
+    display: flex;
+    gap: 14px;
+    /* background: turquoise; */
+}
+
+.btn {
+    /* background: black; */
+    color: white;
+    padding: 8px 11px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    user-select: none;
+}
+
+.postJob {
+    color: rgb(12, 32, 58);
+    font-weight: normal;
+}
+
+.postJob:hover {
+    color:rgb(247, 103, 30);
+}
+
+.emp {
+    background: rgb(12, 75, 181);
+}
+.emp:hover {
+    background: rgba(12, 75, 181, 0.88);
+}
+
+.cand {
+    background: rgb(247, 103, 30);
+}
+
+.cand:hover {
+    background: rgba(247, 102, 30, 0.88);
+}

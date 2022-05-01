@@ -1,0 +1,208 @@
+.JobCard {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background: white;
+    border: 1px solid #0C4BB51A;
+    box-shadow: 0px 5px 20px #0c4bb50f;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+    /* padding: 25px; */
+    /* background: violet; */
+    padding-bottom: 10px;
+}
+
+/* ---------------------------------- */
+
+.jc-details-container {
+    width: 75%;
+    height: 100%;
+    /* padding: 25px; */
+    padding: 25px 25px 12px 25px;
+    /* background: greenyellow; */
+}
+
+.jc-btn-container {
+    width: 25%;
+    height: 100%;
+    padding: 25px 25px 12px 25px;
+}
+
+/* ---------------------------------- */
+
+.jc-header {
+    display: flex;
+    /* width: 100%; */
+}
+
+.jc-logo {
+    margin-right: 16px;
+}
+
+.jc-logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* .jc-header div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+} */
+
+.jc-role {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(12, 32, 58);
+    cursor: pointer;
+    user-select: none;
+}
+
+.jc-company {
+    font-weight: 500;
+    font-size: 16px;
+    color:rgb(247, 103, 30);
+    cursor: pointer;
+    user-select: none;
+    /* display: flex; */
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    /* width: 100%; */
+    /* align-items: center; */
+}
+
+.jc-verifyIcon {
+    /* height: 20px; */
+    /* width: 20px; */
+    font-size: 17px !important;
+    color: rgb(53, 129, 247) !important;
+}
+
+.jc-category {
+    color:rgb(12, 32, 58);
+    font-size: 14px;
+    margin: 15px 0px;
+}
+
+/* ---------------- tags ------------------ */
+
+.jc-tags,
+.jc-other-tags {
+    display: flex;
+    color: rgba(12, 32, 58, 0.6);
+    font-size: 14px;
+    gap: 15px;
+}
+
+/* .jc-tags {} */
+
+/* .jc-other-tags {} */
+
+/* ---------------------------------- */
+
+.jc-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    /* background: dodgerblue; */
+}
+
+.jc-share ,
+.jc-apply {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.jc-share {
+    color: rgba(12, 32, 58, 0.4);
+    font-weight: 500;
+}
+
+.jc-apply {
+    color: rgb(12, 75, 181);
+    font-weight: 500;
+}
+
+/* ---------------------------------- */
+
+.jc-simple {
+    width: 100%;
+    display: flex;
+    /* padding: 25px 25px 25px 25px; */
+}
+
+
+.jc-advance {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    /* padding: 0px 25px; */
+    /* padding-bottom: 15px; */
+    padding: 0px 25px 15px 25px;
+    /* background: yellowgreen; */
+}
+
+.jc-hr {
+    width: 90%;
+    height: 0.5px;
+    background: rgba(68, 60, 60, 0.65);
+    opacity: 0.15;
+    border-radius: 100px;
+    /* margin: 20px 0px; */
+}
+
+.jc-ishiring {
+    font-size: 18px;
+    color:rgba(12, 32, 58, 0.7);
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+    padding: 20px 0px 10px 0px;
+}
+
+.jc-ishiring span {
+    color: rgb(12, 75, 181);
+}
+
+.jc-description {
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 14.4px;
+}
+
+/* ---------------------------------- */
+
+.jc-down-btns {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px 10px 0px;
+}
+
+.jc-down-btns div:first-child {
+    color:rgb(12, 75, 181);
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.jc-down-btns div:last-child {
+    color: white;
+    padding: 8px 11px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    user-select: none;
+    background: rgb(247, 103, 30);
+}
+
+/* ---------------------------------- */
+
