@@ -63,3 +63,14 @@
 .cand:hover {
     background: rgba(247, 102, 30, 0.88);
 }
+
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+    .h-btn-container {
+        display: none;
+        /* background: turquoise; */
+    }
+  }

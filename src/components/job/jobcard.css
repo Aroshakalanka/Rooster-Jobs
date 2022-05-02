@@ -204,5 +204,31 @@
     background: rgb(247, 103, 30);
 }
 
-/* ---------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1084px) {
+    .jc-tags {
+        display: flex;
+        color: rgba(12, 32, 58, 0.6);
+        font-size: 14px;
+        gap: 0px;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .jc-simple {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .jc-btn-container {
+        justify-content: flex-start;
+        width: auto;
+        /* padding: 25px 25px 12px 25px; */
+        padding: 0px 0px 0px 25px;
+    }
+}
+
 

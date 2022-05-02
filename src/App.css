@@ -2,11 +2,12 @@
   width: 100%;
   height: 100%;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 .body {
   /* width: 100%; */
-  height: 100%;
+  /* height: 100vw; */
   /* background: black; */
   display: flex;
   flex-direction: column;
@@ -30,6 +31,10 @@
   align-items: flex-start;
 }
 
+.down-filters-show {
+  display: none;
+}
+
 .down-container {
   width: 100%;
   /* height: 500px; */
@@ -39,6 +44,7 @@
   /* justify-content: center; */
   gap: 30px;
   padding-top: 55px;
+  /* background: yellowgreen; */
 }
 
 
@@ -66,10 +72,87 @@
   margin-bottom: 10px;
 }
 
-/* --------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------ */
 
-@media screen and (max-width: 950px) {
-  body {
+
+@media screen and (max-width: 991px) {
+
+  .body {
+    /* width: 100%; */
+    height: 100%;
+    /* background: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 3.5%;
+    margin-top: -33px;
+    gap: 10px;
+  }
+
+  .down-container {
+    width: 100%;
+    /* height: 500px; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 30px;
+    padding-top: 55px;
+  }
+
+  .d-filters-container {
+    width: auto;
+    width: 100%;
+    /* height: 80vh; */
+    background: rgba(12, 75, 181, 0.03);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 16px;
+    box-sizing: border-box;
+  }
+
+  
+  .down-filters-show div {
+    margin: 0px 4%;
+  }
+  .down-filters-show div:last-child {
+    color:rgb(247, 103, 30);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .d-jobs-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .d-jobs-no {
     display: none;
   }
+
+  .down-filters-show {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 16px;
+    /* background: turquoise; */
+    color: rgba(0, 0, 0, 0.85);
+  }
+
+  .hideFilters {
+    display: none;
+  }
+  
 }
+
+
+/* ------------------------------------------------------------- */
+
+/* @media screen and (max-width: 768px) {
+  
+} */

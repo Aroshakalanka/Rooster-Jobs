@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 import Header from "./components/header/Header";
@@ -11,6 +11,8 @@ import FiltersBar from "./components/filters/FiltersBar";
 import { Jobs } from "./data";
 
 function App() {
+  const [showFilters, setshowFilters] = useState(false);
+
   return (
     <div className="App">
       <Header />
@@ -19,9 +21,23 @@ function App() {
         <SearchBar />
 
         <div className="down-container">
-          <div className="d-filters-container">
+          <div className="down-filters-show">
+            <div>562 jobs recommended for you</div>
+            {!showFilters && (
+              <div onClick={() => setshowFilters(true)}>👓 Filters</div>
+            )}
+            {showFilters && (
+              <div onClick={() => setshowFilters(false)}>🎃 Close</div>
+            )}
+          </div>
+
+          {/* {showFilters && ( */}
+          <div
+            className={`d-filters-container ${!showFilters && "hideFilters"}`}
+          >
             <FiltersBar />
           </div>
+          {/* )} */}
 
           <div className="d-jobs-container">
             <div className="d-jobs-no">576 Jobs</div>
